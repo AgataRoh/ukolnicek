@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(57, 53, 126);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 450px;
+    margin: auto;
+    height: 100%;
+    max-height: 720px;
+  }
+  
+  .ukol {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .ukol:hover {
+    background-color: rgba(255, 186, 8, 0.1);
+  }
+  
+  .ukol.hotovo p {
+    text-decoration: line-through;
+    color: #02c3bd;
+  }
+  
+  .ukol.hotovo .zaskrtavatko {
+    background-color: #02c3bd;
+  }
+  
+  .ukol .zaskrtavatko {
+    width: 20px;
+    height: 20px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    margin: auto;
+  }
+  
+  .ukol .zaskrtavatko:hover {
+    background-color: #02c3bd;
+    cursor: pointer;
+  }
+  
+  .ukol span {
+    color: #02c3bd;
+    opacity: 0.4;
+  }
+  
+  .ukol span:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .ukol-vzor {
+    display: none;
+    opacity: 50%;
+  }
+  
+  input {
+    border: none;
+    border-bottom: 2px solid #bcc3db;
+  }
+  
+  input:focus {
+    outline: none;
+    border-bottom: 4px solid #bcc3db;
+  }
+  
+  .novy_ukol {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    justify-content: baseline;
+  }
+  
+  #tlacitko_pridat {
+    width: 60px;
+    height: 60px;
+    background-color: #ffba08;
+    border-radius: 50%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #tlacitko_pridat span {
+    color: white;
+    font-size: 2.3rem;
+  }
+  
+  footer {
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  header p {
+    margin-top: 2px;
+  }
+  
+  #pocitadlo_hotove {
+    color: orange;
+    font-weight: 900;
+  }
+  
+  #pocitadlo_zadane {
+    color: darkcyan;
+    font-weight: bold;
+  }
+  
+  .seznam {
+    min-height: 350px;
+  }
+  
+  .histBtn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
